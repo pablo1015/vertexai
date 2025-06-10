@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Make sure body has no margin to allow full-width */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Style the app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  margin: 0 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+/* Highlight active link */
+.navbar-nav .nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Full-width content below navigation */
+.content-area {
+  margin-top: 56px; /* Push content below fixed navbar */
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+}
