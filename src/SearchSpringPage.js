@@ -62,6 +62,7 @@ const SearchSpringPage = ({ query, selectedFacets, setSelectedFacets }) => {
       data.facets = mapAttributesFacet(data.facets);
       console.log("SearchSpring Facets:", data.facets);
       // data.facets = data.facets.filter(facet => facet.facet_values.length > 1);
+      data.facets = data.facets.filter(item => item.values.length > 1);
 
       setSearchSpringFacets(data.facets || []);
     } catch (error) {
