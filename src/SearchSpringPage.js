@@ -60,8 +60,8 @@ const SearchSpringPage = ({ query, selectedFacets, setSelectedFacets }) => {
       setSearchSpringPaginationInfo(data.pagination || {});
       data.facets = data.facets.filter(facet => facet.field !== "obsolete");
       data.facets = mapAttributesFacet(data.facets);
-
-      data.facets = data.facets.filter(facet => facet.facet_values.length > 1);
+      print("SearchSpring Facets:", data.facets);
+      // data.facets = data.facets.filter(facet => facet.facet_values.length > 1);
 
       setSearchSpringFacets(data.facets || []);
     } catch (error) {
