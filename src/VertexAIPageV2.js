@@ -153,7 +153,7 @@ const VertexAIPage = ({ query, selectedFacets, setSelectedFacets }) => {
 
                 <h3 className="text-center">Vertex AI Search Results</h3>
                                 <div className="mb-2 text-italic" style={{ fontStyle: "italic" }}>
-                    Selected Categories: {selectedCategoryValue} 
+                    <b>Selected Categories</b>: {selectedCategoryValue} 
                 </div>
                 <div className="text-center mb-2">
                     Execution Time: {vertexExecutionTime} ms
