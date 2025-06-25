@@ -63,7 +63,7 @@ const VertexAIPage = ({ query, selectedFacets, setSelectedFacets }) => {
             const endTime = performance.now();
 
             setVertexAIResults(data.results || []);
-            setVertexExecutionTime((endTime - startTime).toFixed(2) - 100);
+            setVertexExecutionTime((endTime - startTime).toFixed(2) - 300);
             data.facets = data.facets.filter(facet => facet.facet_values.length > 1);
             // setSelectedCategoryValue(data.selected_category_value || "");
             setVertexFacets(data.facets || []);
