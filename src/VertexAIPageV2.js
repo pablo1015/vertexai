@@ -65,7 +65,7 @@ const VertexAIPage = ({ query, selectedFacets, setSelectedFacets }) => {
             setVertexAIResults(data.results || []);
             setVertexExecutionTime((endTime - startTime).toFixed(2) - 100);
             data.facets = data.facets.filter(facet => facet.facet_values.length > 1);
-            setSelectedCategoryValue(data.selected_category_value || "");
+            // setSelectedCategoryValue(data.selected_category_value || "");
             setVertexFacets(data.facets || []);
         } catch (error) {
             console.error("Error fetching Vertex AI results:", error);
@@ -152,9 +152,9 @@ const VertexAIPage = ({ query, selectedFacets, setSelectedFacets }) => {
             <div className="col-md-12">
 
                 <h3 className="text-center">Vertex AI Search Results</h3>
-                                <div className="mb-2 text-italic" style={{ fontStyle: "italic" }}>
+                {/* <div className="mb-2 text-italic" style={{ fontStyle: "italic" }}>
                     <b>Selected Categories</b>: {selectedCategoryValue} 
-                </div>
+                </div> */}
                 <div className="text-center mb-2">
                     Execution Time: {vertexExecutionTime} ms
                 </div>
